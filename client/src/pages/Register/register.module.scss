@@ -1,0 +1,182 @@
+.RegisterWrapper {
+  display: flex;
+  width: 100%;
+  .register_Left {
+    display: flex;
+    background-color: #b43feb;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    text-align: left;
+    width: 50%;
+    height: 100%;
+    gap: 80px;
+    .content {
+      margin-top: 88px;
+      margin-left: 125px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      h2 {
+        color: #f9f9f9;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 125% */
+        letter-spacing: 0.16px;
+        width: 60%;
+      }
+      span {
+        color: #E3E9ED;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: 0.08px;
+        display: inline-block;
+        width: 60%;
+      }
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+  }
+  .register_Right {
+    background-color: #1a161f;
+    width: 50%;
+    padding: 30px 0;
+    .error_message {
+        color: red;
+    }
+    .regstrPas{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        svg{
+            position: absolute;
+            right: 15px;
+            bottom: 40px;
+            font-size: 18px;
+            color: #F9F9F9;
+        }
+    }
+    &__top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        color: #f9f9f9;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px; /* 140% */
+        letter-spacing: 0.1px;
+      }
+    }
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+      margin-top: 78px;
+      h2 {
+        color: #f9f9f9;
+        font-family: Inter;
+        font-size: 32px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 125% */
+        letter-spacing: 0.16px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #78828a;
+        margin-top: 40px;
+        padding: 0 135px;
+        label {
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 22px; /* 157.143% */
+          letter-spacing: 0.07px;
+          margin-bottom: 8px;
+        }
+        input {
+          height: 52px;
+          width: 100%;
+          border-radius: 24px;
+          background-color: #29282f;
+          border: none;
+          margin-bottom: 20px;
+          padding-left: 15px;
+          color: #f9f9f9;
+        }
+        .registerBtn {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          button {
+            height: 58px;
+            border-radius: 24px;
+            color: #f9f9f9;
+            background-color: #b43feb;
+            border: none;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 26px; /* 144.444% */
+            letter-spacing: 0.09px;
+            margin-top: 28px;
+            margin-bottom: 24px;
+            cursor: pointer;
+          }
+          .forBackLogin {
+            color: #9ca4ab;
+            display: flex;
+            justify-content: center;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; /* 150% */
+            letter-spacing: 0.08px;
+            a {
+              color: #b43feb;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media(max-width: 996px){
+    flex-direction: column;
+    .register_Left,.register_Right{
+        width: 100%;
+    }
+  }
+  @media(max-width: 480px){
+    h2{
+        font-size: 24px !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+    .content{
+        margin-left: 0 !important;
+        span{
+            width: 100% !important;
+            text-align: center;
+        }
+    }
+    form{
+        padding: 0 20px !important;
+    }
+  }
+}

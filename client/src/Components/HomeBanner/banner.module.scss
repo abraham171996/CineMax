@@ -1,0 +1,468 @@
+.BannerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  figure {
+    position: relative;
+    .Banner_Content {
+      position: absolute;
+      top: 111px;
+      left: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      color: #fff;
+      p {
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 166.667% */
+        letter-spacing: 0.06px;
+        color: #f9f9f9;
+        padding: 8px 16px;
+        border-radius: 16px;
+        background: rgba(253, 253, 253, 0.08);
+      }
+      h1 {
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 125% */
+        letter-spacing: 0.16px;
+        color: #f9f9f9;
+        margin-top: 12px;
+        margin-bottom: 8px;
+      }
+      span {
+        color: #9ca4ab;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px; /* 157.143% */
+        letter-spacing: 0.07px;
+        margin-bottom: 32px;
+      }
+      &__bottom {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        .bannerBtn {
+          display: flex;
+          align-items: center;
+          position: relative;
+          justify-content: center;
+          text-align: center;
+          button {
+            padding: 16px 24px;
+            border-radius: 24px;
+            background-color: #b43feb;
+            border: none;
+            width: 190px;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; /* 150% */
+            letter-spacing: 0.08px;
+            color: #f9f9f9;
+            height: 56px;
+          }
+          svg {
+            position: absolute;
+            left: 15px;
+          }
+        }
+        .addList {
+          p {
+            color: #f9f9f9;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 22px; /* 157.143% */
+            letter-spacing: 0.07px;
+            background: transparent;
+            padding: 0;
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.HomeBannerList {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  .bannerLists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    li {
+      width: 177px;
+      height: 88px;
+      padding: 16px 32px;
+      border-radius: 16px;
+      border: 1px solid #29282f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.HomeWatching {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  width: 100%;
+  figure {
+    display: flex;
+    width: 100%;
+    gap: 24px;
+  }
+  .watchingTitle {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+  }
+  h2 {
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: 0.12px;
+    color: #f9f9f9;
+    margin-bottom: 32px;
+  }
+}
+.TopMovies {
+  .Imdb {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  h2 {
+    color: #f9f9f9;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 140% */
+    letter-spacing: 0.1px;
+    margin-bottom: 24px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    li {
+      display: flex;
+      gap: 16px;
+      figure {
+        img {
+          object-fit: contain;
+          width: 112px;
+          height: 170px;
+        }
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        h6 {
+          font-family: Inter;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px; /* 166.667% */
+          letter-spacing: 0.06px;
+          color: #d1d8dd;
+          padding: 4px 8px;
+          border-radius: 8px;
+          border: 1px solid #29282f;
+          width: 62px;
+          height: 28px;
+          text-align: center;
+        }
+        h4 {
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px; /* 150% */
+          letter-spacing: 0.08px;
+          color: #f9f9f9;
+          width: 100%;
+        }
+        p {
+          color: #78828a;
+          font-family: Inter;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px; /* 166.667% */
+          letter-spacing: 0.06px;
+        }
+        span {
+          color: #f9f9f9;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 24px; /* 150% */
+          letter-spacing: 0.08px;
+        }
+      }
+    }
+  }
+  a {
+    color: #b43feb;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.08px;
+    display: inline-block;
+    width: 274px;
+    padding: 12px 24px;
+    border-radius: 24px;
+    border: 1px solid #b43feb;
+    text-align: center;
+    margin-top: 32px;
+  }
+}
+.Genres {
+  color: #f9f9f9;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  width: 100%;
+  input{
+    margin-top: 10px;
+    height: 52px;
+    width: 40%;
+    border-radius: 24px;
+    background-color: #29282f;
+    border: none;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    color: #f9f9f9;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    gap: 14px;
+    li {
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px; /* 157.143% */
+      letter-spacing: 0.07px;
+      color: #f9f9f9;
+      padding: 8px 16px;
+      border-radius: 16px;
+      background-color: #171725;
+      width: 77px;
+      height: 38px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.SideBar {
+  background-color: #1a161f;
+  width: 250px;
+  padding-top: 46px;
+  padding-left: 20px;
+  
+  color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 40px;
+  .SideBarTop,
+  .SideBarBottom {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      color: #f9f9f9;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 150% */
+      letter-spacing: 0.08px;
+      margin-bottom: 24px;
+    }
+    &__Icons {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        position: relative;
+        svg{
+          position: absolute;
+          bottom: 27%;
+          right: 30%;
+          font-size: 30px;
+          
+          fill: #B43FEB;
+        }
+        li {
+          display: flex;
+          gap: 12px;
+          p {
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; /* 150% */
+            letter-spacing: 0.08px;
+          }
+        }
+      }
+    }
+  }
+}
+.bannerSide {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  flex-wrap: wrap;
+  .bannerMain {
+    display: flex;
+    flex-direction: column;
+  }
+  .bannerAside {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    max-width: 362px;
+    padding-bottom: 20px;
+    padding-right: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  .SideBar {
+    display: none;
+  }
+  .HomeBannerList {
+    .bannerLists {
+      flex-wrap: wrap;
+    }
+  }
+  .HomeWatching {
+    justify-content: center !important;
+    align-items: center !important;
+    figure {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .BannerCard {
+    img {
+      width: 100%;
+    }
+  }
+  .watchingTitle {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .bannerAside {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .TopMovies {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ul {
+      justify-content: center;
+      align-items: center;
+      li {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .Imdb {
+      justify-content: center;
+    }
+    .content {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  .Genres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ul {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+}
+@media(max-width:768px){
+  .Banner_Content{
+    top: 3px !important;
+    
+    p{
+      font-size: 8px !important;
+      padding: 8px !important;
+    }
+    h1{
+        font-size: 14px !important;
+        margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    line-height: 10px !important;
+
+    }
+    span{
+      font-size: 6px !important;
+      margin-bottom: 2px !important;
+    }
+    &__bottom{
+      gap: 10px !important;
+      button{
+        font-size: 6px !important;
+        width: 90px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px !important;
+      }
+      svg{
+        font-size: 6px;
+      }
+    }
+  }
+}
